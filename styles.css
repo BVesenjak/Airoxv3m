@@ -2976,7 +2976,7 @@ p {
     color: white;
     padding: 1.5rem 2rem;
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(229, 9, 20, 0.5);
+    box-shadow: 0 8px 32px rgba(124, 222, 255, 0.5);
     z-index: 10000;
     transform: translateX(120%);
     transition: transform 0.3s ease;
