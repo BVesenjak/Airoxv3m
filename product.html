@@ -148,8 +148,32 @@
                     
                     <!-- CTAs -->
                     <div class="cta-group">
+                        <div class="cta-btn-wrapper">
+                            <button class="buy-cta" data-analytics="buy-now">
+                                <video class="btn-video btn-video-default" autoplay loop muted playsinline>
+                                    <source src="assets/btn-bg-1.mp4" type="video/mp4">
+                                </video>
+                                <video class="btn-video btn-video-hover" autoplay loop muted playsinline>
+                                    <source src="assets/btn-bg-2.mp4" type="video/mp4">
+                                </video>
+                                <span class="btn-text" style="
+                                font-weight: 800;
+                                font-size: 62px;
+                                color: #ffffff;
+                                letter-spacing: 2px;
+                                text-shadow:
+                                    2px 2px 6px rgba(255, 255, 255, 0.1),   /* soft shadow depth */
+                                    0 0 8px rgba(255, 255, 255, 0.2); /* subtle warm glow fun */
+                                background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                display: inline-block;
+                                text-transform: uppercase;
+                                ">BUY NOW</span>
+                            </button>
+                        </div>
                         <button class="btn btn--primary pill--animated" id="addToCart" data-analytics="add-to-cart" data-animation="assets/btn-anim-7.mp4">Add to Cart</button>
-                        <button class="btn btn--secondary pill--animated" id="buyNow" data-analytics="buy-now" data-animation="assets/btn-anim-8.mp4">Buy Now</button>
+                        
                     </div>
                     
                     <button class="scroll-cue" aria-label="Scroll to benefits">

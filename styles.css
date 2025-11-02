@@ -2996,3 +2996,106 @@ p {
     }
 }
 
+/*special button ///////////////////////////////////////////////////////////*/
+
+
+@font-face {
+    font-family: 'Out Of My League';
+    src: url('assets/OutOfMyLeague.ttf') format('truetype');
+  }
+  
+  .cta-btn-wrapper button.buy-cta {
+    position: relative !important;
+    border: 14px solid rgb(0, 200, 200) !important;
+    background: transparent !important;
+    overflow: hidden !important;
+    transition: border-color 0.05s, background-color 0.05s !important;
+    border-radius: 0 0 50% 50% / 0 0 100% 100% !important;
+    clip-path: polygon(
+      0% 0%,
+      100% 0%,
+      100% 80%,
+      50% 100%,
+      0% 80%
+    ) !important;
+    padding: 0.7rem 8rem !important;
+    cursor: pointer !important;
+    font-family: 'Out Of My League', sans-serif !important;
+  }
+  
+  .cta-btn-wrapper button.buy-cta::before {
+    content: '' !important;
+    position: absolute !important;
+    inset: 0 !important;
+    pointer-events: none !important;
+    z-index: 0 !important;
+    box-shadow: inset 0 0 20px 20px rgba(0, 251, 255, 0.3) !important;
+  }
+  
+  .cta-btn-wrapper .btn-video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    z-index: -1 !important;
+    transition: opacity 0.1s steps(30) !important;
+  }
+  
+  .cta-btn-wrapper .btn-video-default {
+    opacity: 0.6 !important;
+  }
+  
+  .cta-btn-wrapper .btn-video-hover {
+    opacity: 0 !important;
+  }
+  
+  .cta-btn-wrapper .btn-text {
+    position: relative !important;
+    z-index: 2 !important;
+    color: white !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5) !important;
+    font-size: 3rem !important;
+  }
+  
+  .cta-btn-wrapper button.buy-cta:hover {
+    border-color: white !important;
+    box-shadow: 0 0 20px rgba(192, 247, 255, 0.4) !important;
+  }
+  
+  .cta-btn-wrapper button.buy-cta:hover .btn-video-default {
+    opacity: 0 !important;
+  }
+  
+  .cta-btn-wrapper button.buy-cta:hover .btn-video-hover {
+    opacity: 0.6 !important;
+  }
+  
+  .cta-btn-wrapper button.buy-cta:active,
+  .cta-btn-wrapper button.buy-cta:active:hover {
+    background-color: rgb(0, 0, 0) !important;
+    border-color: rgb(0, 70, 70) !important;
+    box-shadow: none !important;
+  }
+  
+  .cta-btn-wrapper button.buy-cta:active .btn-video,
+  .cta-btn-wrapper button.buy-cta:active:hover .btn-video {
+    opacity: 0.1 !important;
+  
+  }
+    
+    @keyframes fadeOutSteps {
+      to { opacity: 0; }
+    }
+    
+    @keyframes clickFlash {
+      0%, 100% {
+        box-shadow: inset 0 0 0 500px rgba(255, 20, 147, 0.7);
+      }
+    }
+
+
+/*special button ///////////////////////////////////////////////////////////*/
