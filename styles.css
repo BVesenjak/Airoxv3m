@@ -664,10 +664,12 @@ p {
     height: auto;
 }
 
+/*
 .feature-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 40px rgba(76, 225, 255, 0.3);
+    box-shadow: 0 10px 40px rgba(255, 255, 255, 0.227);
 }
+*/
 
 .feature-card-image {
     height: 300px;
